@@ -1,6 +1,6 @@
 function traerInformacionBarcos(){
     $.ajax({
-        url:"http://localhost:8080/api/Barcos/todas",
+        url:"http://localhost:8080/api/Boat/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -40,7 +40,7 @@ function guardarInformacionBarcos(){
         dataType: 'JSON',
         data: JSON.stringify(var3),
         
-        url:"http://localhost:8080/api/Barcos/guardar",
+        url:"http://localhost:8080/api/Boat/save",
        
         
         success:function(response) {

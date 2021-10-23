@@ -1,6 +1,6 @@
 function traerInformacionReservaciones(){
     $.ajax({
-        url:"http://localhost:8080/api/Reservaciones/todas",
+        url:"http://localhost:8080/api/Reservation/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -35,7 +35,7 @@ function guardarInformacionReservaciones(){
         dataType: 'JSON',
         data: JSON.stringify(var3),
         
-        url:"http://localhost:8080/api/Reservaciones/guardar",
+        url:"http://localhost:8080/api/Reservation/save",
        
         
         success:function(response) {

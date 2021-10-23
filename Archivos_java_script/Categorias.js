@@ -1,6 +1,6 @@
 function traerInformacionCategorias(){
     $.ajax({
-        url:"http://localhost:8080/api/Categoria/todas",
+        url:"http://localhost:8080/api/Category/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -35,7 +35,7 @@ function guardarInformacionCategorias(){
         dataType: 'JSON',
         data: JSON.stringify(var2),
         
-        url:"http://localhost:8080/api/Categoria/guardar",
+        url:"http://localhost:8080/api/Category/save",
        
         
         success:function(response) {

@@ -1,6 +1,6 @@
 function traerInformacionClientes(){
     $.ajax({
-        url:"http://localhost:8080/api/Cliente/todas",
+        url:"http://localhost:8080/api/Client/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -39,7 +39,7 @@ function guardarInformacionClientes(){
         dataType: 'JSON',
         data: JSON.stringify(var4),
         
-        url:"http://localhost:8080/api/Cliente/guardar",
+        url:"http://localhost:8080/api/Client/save",
        
         
         success:function(response) {

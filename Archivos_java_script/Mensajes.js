@@ -1,6 +1,6 @@
 function traerInformacionMensajes(){
     $.ajax({
-        url:"http://localhost:8080/api/Mensaje/todas",
+        url:"http://localhost:8080/api/Message/all",
         type:"GET",
         datatype:"JSON",
         success:function(respuesta){
@@ -33,7 +33,7 @@ function guardarInformacionMensajes(){
         dataType: 'JSON',
         data: JSON.stringify(var3),
         
-        url:"http://localhost:8080/api/Mensaje/guardar",
+        url:"http://localhost:8080/api/Message/save",
        
         
         success:function(response) {
