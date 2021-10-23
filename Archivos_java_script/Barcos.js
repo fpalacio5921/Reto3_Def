@@ -15,9 +15,9 @@ function pintarRespuestaBarcos(respuesta){
     let myTable="<table>";
     for(i=0;i<respuesta.length;i++){
         myTable+="<tr>";
-        myTable+="<td>"+respuesta[i].brand+"</td>";
         myTable+="<td>"+respuesta[i].name+"</td>";
-        myTable+="<td>"+respuesta[i].model+"</td>";
+        myTable+="<td>"+respuesta[i].brand+"</td>";
+        myTable+="<td>"+respuesta[i].year+"</td>";
         myTable+="<td>"+respuesta[i].description+"</td>";
         
         myTable+="</tr>";
@@ -28,9 +28,9 @@ function pintarRespuestaBarcos(respuesta){
 
 function guardarInformacionBarcos(){
     let var3 = {
-        brand:$("#Bbrand").val(),
-        name:$("#name").val(),
-        model:$("#Bmodel").val(),
+        brand:$("#Bname").val(),
+        name:$("#brand").val(),
+        model:$("#Byear").val(),
         description:$("#Bdescription").val(),
         };
       
